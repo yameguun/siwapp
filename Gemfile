@@ -41,16 +41,17 @@ end
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'web-console', '~> 2.0', group: :development
 
-group :test do
-  gem 'capybara-webkit'
-  gem 'selenium-webdriver'
-  gem 'database_cleaner'
-end
+#group :test do
+#  gem 'capybara-webkit'
+#  gem 'selenium-webdriver'
+#  gem 'database_cleaner'
+#end
 
 gem 'active_model_serializers'
 gem 'acts-as-taggable-on'  # https://github.com/mbleigh/acts-as-taggable-on
 gem 'autoprefixer-rails'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+
 # to add items dinamically
 gem 'cocoon'
 gem 'factory_girl_rails'
@@ -59,7 +60,6 @@ gem 'fastclick-rails'
 gem 'haml'
 gem 'jquery-ui-rails'
 gem 'js-routes'
-gem 'pg'
 gem 'pry-rails', group: :development
 gem 'puma'
 gem 'rails_12factor', group: :production
@@ -83,3 +83,6 @@ gem "http"
 # for translation
 gem 'route_translator'
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'mysql2', '>= 0.3.13', '< 0.5'
+gem 'ruby-mysql'

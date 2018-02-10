@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(version: 20170608155530) do
     t.decimal  "quantity",                   precision: 53, scale: 15, default: 1.0, null: false
     t.decimal  "discount",                   precision: 53, scale: 2,  default: 0.0, null: false
     t.integer  "common_id"
-    t.string   "description",  limit: 20000
+    t.string   "description"
     t.decimal  "unitary_cost",               precision: 53, scale: 15, default: 0.0, null: false
     t.integer  "product_id"
     t.datetime "deleted_at"
