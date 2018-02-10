@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy',  as: :logout
 
   post 'test' => 'hooks#test'
-  
+
   get  'taxes/get_defaults', to: 'taxes#get_defaults'
 
   resources :taxes, :templates, :series
@@ -79,10 +79,6 @@ Rails.application.routes.draw do
         resources :items, only: [:index, :create]
       end
     end
-  end
-
-  localized do
-    resources :invoices, :recurring_invoices, :customers, :settings
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -81,7 +81,6 @@ gem 'wisper-celluloid'
 ## to make http POST requests
 gem "http"
 # for translation
-gem 'route_translator'
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'mysql2', '>= 0.3.13', '< 0.5'

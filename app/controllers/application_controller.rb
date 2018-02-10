@@ -7,10 +7,6 @@ class ApplicationController < ActionController::Base
   # demand authentification everywhere
   before_action :authenticate
 
-  def default_url_options(options = {})
-    {locale: I18n.locale}.merge options
-  end
-
   # Public: return a list of tags  already saved for a certain types
   #
   # Params:
